@@ -7,7 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNPDateEntity.h"
+typedef NS_ENUM(NSInteger, BNPLanguageType) {
+    BNPLanguageTypeEN_US,
+    BNPLanguageTypeJA_JP,
+    BNPLanguageTypeZH_CN
+};
 
 @interface BNPDateExtracter : NSObject
+
+-(instancetype)init;
+-(instancetype)initWithLanguage:(BNPLanguageType)lan;
+
++(BNPLanguageType)getSystemLanguageType;
++(BNPLanguageType)getLanguageTypeWithName:(NSString *)local;
++(BNPLanguageType)guessLanguageTypeFromString:(NSString*)content;
+
+-(NSArray *)getDateEntitiesFromString:(NSString *)content;
+-(NSArray *)getDateEntitiesFromString:(NSString *)content inLanguage:(BNPLanguageType)lang;
 
 @end

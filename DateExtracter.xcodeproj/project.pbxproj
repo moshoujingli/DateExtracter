@@ -16,6 +16,8 @@
 		6ADBADDC1AB7221F00104B81 /* DateExtracterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADDB1AB7221F00104B81 /* DateExtracterTests.m */; };
 		6ADBADE81AB7226F00104B81 /* BNPDateExtracter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADE71AB7226F00104B81 /* BNPDateExtracter.m */; };
 		6ADBADE91AB7226F00104B81 /* BNPDateExtracter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADE71AB7226F00104B81 /* BNPDateExtracter.m */; };
+		6ADBADEC1AB73BF000104B81 /* BNPDateEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */; };
+		6ADBADED1AB73BF000104B81 /* BNPDateEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		6ADBADDB1AB7221F00104B81 /* DateExtracterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateExtracterTests.m; sourceTree = "<group>"; };
 		6ADBADE61AB7226F00104B81 /* BNPDateExtracter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNPDateExtracter.h; sourceTree = "<group>"; };
 		6ADBADE71AB7226F00104B81 /* BNPDateExtracter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNPDateExtracter.m; sourceTree = "<group>"; };
+		6ADBADEA1AB73BF000104B81 /* BNPDateEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNPDateEntity.h; sourceTree = "<group>"; };
+		6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNPDateEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 				6ADBADBF1AB7221F00104B81 /* Supporting Files */,
 				6ADBADE61AB7226F00104B81 /* BNPDateExtracter.h */,
 				6ADBADE71AB7226F00104B81 /* BNPDateExtracter.m */,
+				6ADBADEA1AB73BF000104B81 /* BNPDateEntity.h */,
+				6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */,
 			);
 			path = DateExtracter;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADBADEC1AB73BF000104B81 /* BNPDateEntity.m in Sources */,
 				6ADBADC81AB7221F00104B81 /* ViewController.m in Sources */,
 				6ADBADE81AB7226F00104B81 /* BNPDateExtracter.m in Sources */,
 				6ADBADC51AB7221F00104B81 /* AppDelegate.m in Sources */,
@@ -236,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADBADED1AB73BF000104B81 /* BNPDateEntity.m in Sources */,
 				6ADBADDC1AB7221F00104B81 /* DateExtracterTests.m in Sources */,
 				6ADBADE91AB7226F00104B81 /* BNPDateExtracter.m in Sources */,
 			);
@@ -422,6 +430,7 @@
 				6ADBADE11AB7221F00104B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6ADBADE21AB7221F00104B81 /* Build configuration list for PBXNativeTarget "DateExtracterTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +439,7 @@
 				6ADBADE41AB7221F00104B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
