@@ -13,16 +13,20 @@
 +(BNPLanguageType)getSystemLanguageType{
     NSString *currentLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
     NSLog(@"%@",currentLanguage);
-    if ([currentLanguage isEqualToString:@"ja"]) {
+    return [BNPDateExtracter getLanguageTypeWithName:currentLanguage];
+}
+
++(BNPLanguageType)getLanguageTypeWithName:(NSString *)local{
+    if ([local isEqualToString:@"ja"]) {
         return BNPLanguageTypeJA_JP;
     }
-    if ([currentLanguage isEqualToString:@"en"]) {
+    if ([local isEqualToString:@"en"]) {
         return BNPLanguageTypeEN_US;
     }
-    if ([currentLanguage isEqualToString:@"zh"]) {
+    if ([local isEqualToString:@"zh"]) {
         return BNPLanguageTypeZH_CN;
     }
-    return BNPLanguageTypeEN_US;
+    return BNPLanguageTypeDF_DF;
 }
 
 @end

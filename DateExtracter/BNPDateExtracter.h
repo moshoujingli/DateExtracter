@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "BNPDateEntity.h"
+#define BNPLanguageTypeDF_DF BNPLanguageTypeEN_US
+
 typedef NS_ENUM(NSInteger, BNPLanguageType) {
     BNPLanguageTypeEN_US,
     BNPLanguageTypeJA_JP,
