@@ -29,4 +29,11 @@
     return BNPLanguageTypeDF_DF;
 }
 
+-(NSArray *)getDateEntitiesFromString:(NSString *)content{
+    return nil;
+}
+-(NSArray *)getDateEntitiesFromString:(NSString *)content inLanguage:(BNPLanguageType)lang{
+    return nil;
+}
+
 @end
