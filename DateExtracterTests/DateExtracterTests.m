@@ -30,8 +30,6 @@
     if (error)
         NSLog(@"Error reading file%@: %@",filepath, error.localizedDescription);
     
-    NSLog(@"contents: %@", fileContents);
-    
     NSData* jsonData = [fileContents dataUsingEncoding:NSUTF8StringEncoding];
     //解析json数据，使用系统方法 JSONObjectWithData:  options: error:
     self.testContent = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];
@@ -45,17 +43,35 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    
-    
-    
-    NSArray *singleResult = [self.extracter getDateEntitiesFromString:@"下周一晚上七点面谈"];
-    XCTAssertEqual([singleResult count], 1);
-    
-    NSArray *periodResult = [self.extracter getDateEntitiesFromString:@"周末回国"];
-    XCTAssertEqual([periodResult count], 2);
+- (void)testResult{
+    NSArray *testContents = [self.testContent objectForKey:@"contents"];
+    NSArray *locals = @[@"zh_cn",@"en_us",@"ja_jp"];
+    for (NSString *local in locals) {
+        NSString *contentName = [@"text_" stringByAppendingString:local];
+        NSString *lanName = [local substringToIndex:2];
+        BNPLanguageType lanType = [BNPDateExtracter getLanguageTypeWithName:lanName];
+        for (NSDictionary *testContent in testContents) {
+            NSString *content = [testContent objectForKey:contentName];
+            if (content) {
+                NSArray *timeExpectedDesc = [testContent objectForKey:@"time"];
+                NSArray *result = [self.extracter getDateEntitiesFromString:content inLanguage:lanType];
+                [self assertTimeDesc:timeExpectedDesc EqualDateEntities:result];
+                
+            }
+        }
+    }
+}
 
-    
+-(void)assertTimeDesc:(NSArray *)desc EqualDateEntities:(NSArray *)entities{
+    XCTAssertEqual([entities count], [desc count]);
+    for (NSInteger i = 0; i<[entities count]; i++) {
+        NSString *dateDesc = desc[i];
+        NSDate *date = ((BNPDateEntity *)entities[i]).date;
+        [self assertDesc:dateDesc equalToDate:date];
+    }
+}
+
+-(void)assertDesc:(NSString *)desc equalToDate:(NSDate *)date{
     
 }
 
