@@ -18,6 +18,8 @@
 		6ADBADE91AB7226F00104B81 /* BNPDateExtracter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADE71AB7226F00104B81 /* BNPDateExtracter.m */; };
 		6ADBADEC1AB73BF000104B81 /* BNPDateEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */; };
 		6ADBADED1AB73BF000104B81 /* BNPDateEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */; };
+		6ADBADF31ABDAC9A00104B81 /* TestContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF21ABDAC9A00104B81 /* TestContent.json */; };
+		6ADBADF41ABDAC9A00104B81 /* TestContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF21ABDAC9A00104B81 /* TestContent.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		6ADBADE71AB7226F00104B81 /* BNPDateExtracter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNPDateExtracter.m; sourceTree = "<group>"; };
 		6ADBADEA1AB73BF000104B81 /* BNPDateEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNPDateEntity.h; sourceTree = "<group>"; };
 		6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNPDateEntity.m; sourceTree = "<group>"; };
+		6ADBADF21ABDAC9A00104B81 /* TestContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestContent.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				6ADBADDA1AB7221F00104B81 /* Info.plist */,
+				6ADBADF21ABDAC9A00104B81 /* TestContent.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -211,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADBADF31ABDAC9A00104B81 /* TestContent.json in Resources */,
 				6ADBADCB1AB7221F00104B81 /* Main.storyboard in Resources */,
 				6ADBADD01AB7221F00104B81 /* LaunchScreen.xib in Resources */,
 				6ADBADCD1AB7221F00104B81 /* Images.xcassets in Resources */,
@@ -221,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADBADF41ABDAC9A00104B81 /* TestContent.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
