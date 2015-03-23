@@ -23,12 +23,12 @@
         {
             "tag":"NEXT_MONDAT",
             "text_zh_cn":"下周一晚上七点面谈",
-            "time":["+1w;+1d;+19h"]
+            "time":["+1w;+0d;+19h"]
         },
         {
             "tag":"WEEKEND",
             "text_zh_cn":"周末回国",
-            "time":["+0w;+6d","+1w;+0d"]
+            "time":["+0w;+5d","+0w;+6d"]
         },
     ]
 }
