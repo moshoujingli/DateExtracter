@@ -3,32 +3,32 @@
         {
             "tag":"LATER",
             "text_zh_cn":"稍后交钱",
-            "time":["+3h"]
+            "time":["+3h;+30m"]
         },
         {
             "tag":"TOMORROW",
             "text_zh_cn":"明天上午十点吃早饭",
-            "time":["+1d+10h"]
+            "time":["+1d;+10h"]
         },
         {
             "tag":"TDAT",
             "text_zh_cn":"后天中午和老大吃饭",
-            "time":["+2d+12h"]
+            "time":["+2d;+12h"]
         },
         {
             "tag":"TONIGHT",
             "text_zh_cn":"今晚吃牛肉盖饭",
-            "time":["+0d+19h"]
+            "time":["+0d;+19h"]
         },
         {
             "tag":"NEXT_MONDAT",
             "text_zh_cn":"下周一晚上七点面谈",
-            "time":["+1w+1d+19h"]
+            "time":["+1w;+1d;+19h"]
         },
         {
             "tag":"WEEKEND",
             "text_zh_cn":"周末回国",
-            "time":["+0w+6d","+1w+0d"]
+            "time":["+0w;+6d","+1w;+0d"]
         },
     ]
 }
