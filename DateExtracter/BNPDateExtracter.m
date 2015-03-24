@@ -33,7 +33,16 @@
     return nil;
 }
 -(NSArray *)getDateEntitiesFromString:(NSString *)content inLanguage:(BNPLanguageType)lang{
+    
     return nil;
 }
+-(NSString *)getContent:(NSString *)content  InLanguage:(BNPLanguageType)lang{
+    return nil;
+}
+
+-(NSArray *)getDatePiecesInContent:(NSString *)content{
+    return nil;
+}
+
 
 @end
