@@ -11,6 +11,7 @@
 #define BNPLanguageTypeDF_DF BNPLanguageTypeEN_US
 
 typedef NS_ENUM(NSInteger, BNPLanguageType) {
+    BNPLanguageTypeALL = 0,
     BNPLanguageTypeEN_US,
     BNPLanguageTypeJA_JP,
     BNPLanguageTypeZH_CN
@@ -18,13 +19,16 @@ typedef NS_ENUM(NSInteger, BNPLanguageType) {
 
 @interface BNPDateExtracter : NSObject
 
+//alloc tree for all lan
 -(instancetype)init;
+//alloc tree for certain lan
 -(instancetype)initWithLanguage:(BNPLanguageType)lan;
 
 +(BNPLanguageType)getSystemLanguageType;
 +(BNPLanguageType)getLanguageTypeWithName:(NSString *)local;
 +(BNPLanguageType)guessLanguageTypeFromString:(NSString*)content;
 
+//use default language
 -(NSArray *)getDateEntitiesFromString:(NSString *)content;
 -(NSArray *)getDateEntitiesFromString:(NSString *)content inLanguage:(BNPLanguageType)lang;
 
