@@ -1,0 +1,7 @@
+{
+    "delimit":["到","至"],
+    "unit_year":["年"],
+    "unit_month":["月"],
+    "unit_week_day":["周","星期"],
+    "unit_day":["天"]
+}

@@ -20,6 +20,10 @@
 		6ADBADED1AB73BF000104B81 /* BNPDateEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */; };
 		6ADBADF31ABDAC9A00104B81 /* TestContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF21ABDAC9A00104B81 /* TestContent.json */; };
 		6ADBADF41ABDAC9A00104B81 /* TestContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF21ABDAC9A00104B81 /* TestContent.json */; };
+		6ADBADF71AC4536500104B81 /* elem_en_us.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF61AC4536500104B81 /* elem_en_us.json */; };
+		6ADBADF81AC4536500104B81 /* elem_en_us.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF61AC4536500104B81 /* elem_en_us.json */; };
+		6ADBADFA1AC4538D00104B81 /* elem_zh_cn.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF91AC4538D00104B81 /* elem_zh_cn.json */; };
+		6ADBADFB1AC4538D00104B81 /* elem_zh_cn.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBADF91AC4538D00104B81 /* elem_zh_cn.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,8 @@
 		6ADBADEA1AB73BF000104B81 /* BNPDateEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNPDateEntity.h; sourceTree = "<group>"; };
 		6ADBADEB1AB73BF000104B81 /* BNPDateEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNPDateEntity.m; sourceTree = "<group>"; };
 		6ADBADF21ABDAC9A00104B81 /* TestContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestContent.json; sourceTree = "<group>"; };
+		6ADBADF61AC4536500104B81 /* elem_en_us.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = elem_en_us.json; sourceTree = "<group>"; };
+		6ADBADF91AC4538D00104B81 /* elem_zh_cn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = elem_zh_cn.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		6ADBADBE1AB7221F00104B81 /* DateExtracter */ = {
 			isa = PBXGroup;
 			children = (
+				6ADBADF51AC4523400104B81 /* elements */,
 				6ADBADC31AB7221F00104B81 /* AppDelegate.h */,
 				6ADBADC41AB7221F00104B81 /* AppDelegate.m */,
 				6ADBADC61AB7221F00104B81 /* ViewController.h */,
@@ -133,6 +140,15 @@
 				6ADBADF21ABDAC9A00104B81 /* TestContent.json */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6ADBADF51AC4523400104B81 /* elements */ = {
+			isa = PBXGroup;
+			children = (
+				6ADBADF61AC4536500104B81 /* elem_en_us.json */,
+				6ADBADF91AC4538D00104B81 /* elem_zh_cn.json */,
+			);
+			name = elements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADBADF31ABDAC9A00104B81 /* TestContent.json in Resources */,
+				6ADBADF71AC4536500104B81 /* elem_en_us.json in Resources */,
 				6ADBADCB1AB7221F00104B81 /* Main.storyboard in Resources */,
+				6ADBADFA1AC4538D00104B81 /* elem_zh_cn.json in Resources */,
 				6ADBADD01AB7221F00104B81 /* LaunchScreen.xib in Resources */,
 				6ADBADCD1AB7221F00104B81 /* Images.xcassets in Resources */,
 			);
@@ -226,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADBADFB1AC4538D00104B81 /* elem_zh_cn.json in Resources */,
+				6ADBADF81AC4536500104B81 /* elem_en_us.json in Resources */,
 				6ADBADF41ABDAC9A00104B81 /* TestContent.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
